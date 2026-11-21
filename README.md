@@ -29,17 +29,13 @@ __要求__
 
 
 2、打包生成exe
-* `pyinstaller -F -w -i "res\icon_1.ico" -n DDnetGI "main.py"`
+* `pyinstaller -F -w -i "res\icon_1.ico" -n DDnetGI "main.py";mv dist\DDnetGI.exe .`
 or
-`pyinstaller -F -w -n DDnetGI "main.py"`
-
-`生成的exe在dist文件夹`
+* `pyinstaller -F -w -n DDnetGI "main.py";mv dist\DDnetGI.exe .`
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="right">F26.11.21</p>
+3、删除多余部分 **(可选)**
+
+* 删除 `DDnetGI.exe`、`res文件夹` 以外的文件
+* **注意**启动会自动生成 `cache文件夹`
+
